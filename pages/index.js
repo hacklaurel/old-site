@@ -124,8 +124,8 @@ function Page({
     <>
       <Meta
         as={Head}
-        title="Hack Club | Home for high school coders"
-        description="Hack Club is a global nonprofit network of high school makers & student-led coding clubs where young people build the agency, the network, & the technical talent to think big & do big things in the world."
+        title="PG Hacks | PGCPS's First Hackathon"
+        description="PG Hacks is an event where you can learn more about the joy of coding."
         image="https://cloud-nqhrewrzc-hack-club-bot.vercel.app/0og-image-min.png"
       />
       <Head>
@@ -145,20 +145,6 @@ function Page({
         }}
       >
         {/* <style>{styles}</style> */}
-        <Secret
-          reveal={reveal}
-          onMouseEnter={() => {
-            setHover(true)
-            console.log('hover:', hover)
-          }}
-          onMouseOut={() => {
-            setHover(false)
-            console.log('hover:', hover)
-          }}
-        />
-        <Konami action={easterEgg} code={[38, 38, 40, 40]}>
-          {"Hey, I'm an Easter Egg! Look at me!"}
-        </Konami>
         <Box
           as="header"
           sx={{
@@ -196,7 +182,7 @@ function Page({
               }}
               as="h4"
             >
-              Welcome to Hack&nbsp;Club
+              Welcome to PG&nbsp;Hacks
             </Text>
             <Heading>
               <Text
@@ -212,7 +198,7 @@ function Page({
                   width: '100%'
                 }}
               >
-                We are <Comma>{slackData.total_members_count}</Comma>{' '}
+                We are {' '}
                 <Text
                   sx={{
                     color: 'transparent',
