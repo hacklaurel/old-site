@@ -202,3 +202,33 @@ export const Team = (props) => (
     }}
   />
 )
+
+export const FAQ = props => (
+  <Box
+    {...props}
+    sx={{
+      ul: {
+        p: 0,
+        m: 0,
+        listStyle: 'none',
+        display: 'grid',
+        gridTemplateColumns: [null, '1fr 1fr'],
+        gridGap: [3, 4]
+      },
+      a: {
+        fontWeight: 'bold',
+        color: 'primary',
+        textDecoration: 'none'
+      },
+      li: {
+        fontSize: [1, null, 2]
+      },
+      p: { my: 0 },
+      strong: {
+        display: 'block',
+        fontSize: 2
+      },
+      ...props.sx
+    }}
+  />
+)
