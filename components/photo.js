@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { jsx } from '@emotion/react'
 import { Box, Card, Text, Image, useColorMode } from 'theme-ui'
 import theme from '../lib/theme'
 
