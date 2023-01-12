@@ -1,4 +1,5 @@
-import { Banner, List, Container, Callout, Gallery, Team } from '../components/blocks'
+import { Banner, List, Container, Callout, Gallery, Team, Grid } from '../components/blocks'
+import {Button,} from 'theme-ui'
 import Sponsors from '../components/sponsors'
 import Photo from '../components/photo'
 
@@ -7,24 +8,33 @@ import Photo from '../components/photo'
 # Tiger Hacks
 
 ## Unleash your creativity and problem-solving skills at Tiger Hacks, where PGCPS students come together to design and build innovative solutions to real-world challenges.
+## {' '}
+
+<Button
+  as="a"
+  href="https://app.fillout.com/flow/uDRyboUxWVus"
+  sx={{ bg: 'yellow', borderRadius: 'circle', fontSize: '24px' }}
+>
+  {'RSVP →'}
+</Button>
+
 
 </Banner>
 
 <Container>
 <Callout>
 
-92% of attendees were attending their first hackathon. They created 40+ innovative projects. 41% were first-time coders, & 96% said they’d continue after the event.
-
-Though technology opportunities are abound on the coasts, we set a new precedent of what making looks like for young people—from the snowy woods of central PA.
+Tiger Hacks is a high school hackathon where students from PG come together to turn their ideas into reality. Join us for a weekend of coding, creating, and problem-solving as we work together to build innovative solutions to real-world challenges involving students.
 
 </Callout>
 </Container>
 
+
 <Gallery>
 
-<Photo wide alt="Overview" src="https://cdn.glitch.com/3d283e0f-19c4-4546-b0b2-223ec3a7dc23%2Foverview.jpg?v=1565769230316" />
+{/* <Photo wide alt="Overview" src="https://cdn.glitch.com/3d283e0f-19c4-4546-b0b2-223ec3a7dc23%2Foverview.jpg?v=1565769230316" />
 <Photo alt="Working" src="https://cdn.glitch.com/3d283e0f-19c4-4546-b0b2-223ec3a7dc23%2Foverview_2.jpg?v=1565769231539" />
-<Photo alt="Collaborating" src="https://cdn.glitch.com/3d283e0f-19c4-4546-b0b2-223ec3a7dc23%2Fcollaborating.jpg?v=1565769226508" />
+<Photo alt="Collaborating" src="https://cdn.glitch.com/3d283e0f-19c4-4546-b0b2-223ec3a7dc23%2Fcollaborating.jpg?v=1565769226508" /> */}
 
 Three workshops taught the basics of making attendees’ first websites, games, & even a web-based synthesizer.
 
@@ -66,7 +76,7 @@ This team made **OfficeBot**, a rolling robot to play relevant “The Office” 
 <List sx={{
   fontSize: [2, 3],
   lineHeight: 'heading',
-  'li:first-child': {
+  'li:first-of-type': {
     m: [-3, -4],
     mr: [0, 0],
     lineHeight: 0,
@@ -74,7 +84,7 @@ This team made **OfficeBot**, a rolling robot to play relevant “The Office” 
       maxWidth: '100%'
     }
   },
-  'li:last-child': {
+  'li:last-of-type': {
     p: [3, 0]
   },
   li: {
