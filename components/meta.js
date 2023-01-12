@@ -5,11 +5,11 @@ const makeTitle = (title, name) =>
 
 const Meta = ({
   color = '#3fb34f',
-  name = 'Hack Pennsylvania',
-  title = 'Hack Pennsylvania – PA’s largest high school hackathon',
-  description = 'January 2019, 111 hackers came together for Pennsylvania’s largest high school hackathon ever.',
+  name = 'Tiger Hacks',
+  title = 'Tiger Hacks – A brand new hackathon based in Laurel, MD',
+  description = 'Unleash your creativity and problem-solving skills at Tiger Hacks, where PGCPS students come together to design and build innovative solutions to real-world challenges.',
   image = 'https://2019.hackpenn.com/card.png',
-  url = 'https://hackpenn.com'
+  url = 'https://tiger-hacks-site.vercel.app'
 }) => (
   <Head>
     <meta key="og_locale" property="og:locale" content="en_US" />
@@ -42,21 +42,21 @@ const Meta = ({
     <link
       key="icon"
       rel="shortcut icon"
-      href="https://2019.hackpenn.com/icons-fc76d37f75db83ce9f82f7672f91551e/favicon.ico"
+      href="/favicon.ico"
     />
     <link
       key="favicon_16"
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="https://2019.hackpenn.com/icons-fc76d37f75db83ce9f82f7672f91551e/favicon-16x16.png"
+      href="/favicon-16x16.png"
     />
     <link
       key="favicon_32"
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="https://2019.hackpenn.com/icons-fc76d37f75db83ce9f82f7672f91551e/favicon-32x32.png"
+      href="/favicon-32x32.png"
     />
     <script
       key="ld_json"
@@ -66,19 +66,19 @@ const Meta = ({
           '@context': 'https://schema.org',
           '@type': 'Organization',
           name: 'hackpenn',
-          url: 'https://hackpenn.com',
-          logo: 'https://2019.hackpenn.com/flag.png',
+          url: 'https://tiger-hacks-site.vercel.app',
+          logo: 'https://tiger-hacks-site.vercel.app/img/tigerhacks.wp2',
           sameAs: [
-            'https://twitter.com/hackpenn',
-            'https://www.instagram.com/hackpenn',
-            'https://www.facebook.com/hackpenn'
+            'https://twitter.com/tigerhacksmd',
+            'https://www.instagram.com/tigerhacksmd',
+            'https://www.facebook.com/tigerhacksmd'
           ],
           contactPoint: [
             {
               '@type': 'ContactPoint',
-              email: 'contact@hackpenn.com',
+              email: 'contact@tiger-hacks-site.com',
               contactType: 'customer support',
-              url: 'https://hackpenn.com'
+              url: 'https://tiger-hacks-site.vercel.app'
             }
           ]
         })

@@ -62,7 +62,7 @@ export default (props) => {
               sx={{ display: ['none', 'block'] }}
               variant="styles.navitem"
             >
-              Hack Pennsylvania
+              Tiger Hacks
             </Text>
           </A>
         </Link>
@@ -148,13 +148,6 @@ export default (props) => {
               a: { fontSize: 1 }
             }}
           >
-            <A
-              href="https://lachlanjc.me"
-              target="_blank"
-              variant="styles.navitem"
-            >
-              Site by @lachlanjc
-            </A>
             <Text
               sx={{
                 fontFamily: 'mono',
@@ -166,7 +159,7 @@ export default (props) => {
             >
               Fiscally sponsored by The Hack Foundation.
               <br />
-              Nonprofit EIN: 81-2908499.
+              Nonprofit EIN: <code>81-2908499</code>.
             </Text>
           </Box>
         </Container>
