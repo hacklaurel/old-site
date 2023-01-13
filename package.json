@@ -24,8 +24,7 @@
     "react-dom": "^18.2.0",
     "recharts": "^2.2.0",
     "theme-ui": "^0.15.4",
-    "unformat-usd": "^0.1.1",
-    "webpack-bundle-analyzer": "^4.7.0"
+    "unformat-usd": "^0.1.1"
   },
   "license": "MIT",
   "devDependencies": {
