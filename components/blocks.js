@@ -4,7 +4,7 @@ export const Banner = (props) => (
   <Box
     sx={{
       backgroundImage:
-        'linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,0.375)), url(/img/indexbanner.webp)',
+        'linear-gradient(rgba(229,38,96,0.5), rgba(229,38,96,0.5)), url(/img/bannerimg.jpg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       color: 'white',
