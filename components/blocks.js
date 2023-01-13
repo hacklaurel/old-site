@@ -170,7 +170,7 @@ export const Team = (props) => (
       },
       p: {
         my: 0,
-        '&:first-child': {
+        '&:first-of=type': {
           lineHeight: 0
         }
       },
