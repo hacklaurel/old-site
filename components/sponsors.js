@@ -1,10 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
-// import {jsx} from '@emotion/react'
-import { Container } from './blocks'
-import { Box, useColorMode } from 'theme-ui'
+import { Box, useColorMode, Image } from 'theme-ui'
 import theme from '../lib/theme'
-import { Button } from 'theme-ui'
 
 const Base = styled(Box)`
   display: grid;
@@ -47,8 +44,9 @@ const Sponsors = (props) => {
   return (
     <Base colorMode={colorMode} {...props}>
       {data[props.section || 'sponsors'].map((sponsor) => (
-        <a key={sponsor.name} href={`${sponsor.link}`}>
-          <img
+        <a key={sponsor.name} href={`${sponsor.link}`} >
+          <Image
+            sx={{ transform: 'none', transition: 'all 500ms', '&:hover': { transform: 'scale(1.1)' } }}
             alt={sponsor.name}
             src={`/img/${sponsor.image}`}
             key={sponsor.image}
