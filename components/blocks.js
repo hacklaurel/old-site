@@ -9,7 +9,7 @@ export const Banner = (props) => (
       backgroundPosition: 'center',
       color: 'white',
       textShadow: '0 2px 4px rgba(0,0,0,.I 75)',
-      py: [4, 5, 6, 7],
+      py: [4, 5, 6, 6],
       mb: [4, 5]
     }}
   >

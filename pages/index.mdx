@@ -1,38 +1,53 @@
-import { Banner, List, Container, Callout, Gallery, Team, Grid, FAQ } from '../components/blocks'
-import {Button,} from 'theme-ui'
+import {
+  Banner,
+  List,
+  Container,
+  Callout,
+  Gallery,
+  Team,
+  Grid,
+  FAQ
+} from '../components/blocks'
+import { Button } from 'theme-ui'
 import Sponsors from '../components/sponsors'
 import Photo from '../components/photo'
 
-<Banner>
+<Banner sx={{pt: 0}}>
+<h1 style={{display: 'none'}}>Hack Laurel</h1>
+<img src="/img/hacklaurel_wm.webp" width={1024} alt="hack laurel wordmark"/>
 
-# Tiger Hacks
+## Unleash your creativity and problem-solving skills at Hack Laurel, where PGCPS students come together to design and build innovative solutions to real-world challenges.
 
-## Unleash your creativity and problem-solving skills at Tiger Hacks, where PGCPS students come together to design and build innovative solutions to real-world challenges.
 ## {' '}
 
 <Button
   as="a"
   href="https://app.fillout.com/flow/uDRyboUxWVus"
-  sx={{ bg: 'yellow', borderRadius: 'circle', fontSize: '24px'}}
+  sx={{ bg: '#e52660', borderRadius: 'circle', fontSize: '24px' }}
 >
   {'RSVP →'}
 </Button>
 
 <Button
   as="a"
-  sx={{ bg: 'purple', borderRadius: 'circle', fontSize: '24px', ml: 3, cursor: 'not-allowed' }}
+  sx={{
+    bg: '#5865f2',
+    borderRadius: 'circle',
+    fontSize: '24px',
+    ml: 3,
+    cursor: 'not-allowed'
+  }}
   variant="disabled"
 >
   {'Discord Server (soon) →'}
 </Button>
-
 
 </Banner>
 
 <Container>
 <Callout sx={{ mx: [null, null, -3, -4] }}>
 
-Tiger Hacks is a high school hackathon where students from PG come together to turn their ideas into reality. Join us for a weekend of coding, creating, and problem-solving as we work together to build innovative solutions to real-world challenges involving students.
+Hack Laurel is a high school hackathon where students from PG come together to turn their ideas into reality. Join us for a weekend of coding, creating, and problem-solving as we work together to build innovative solutions to real-world challenges involving students.
 
 </Callout>
 </Container>
@@ -61,22 +76,39 @@ Tiger Hacks is a high school hackathon where students from PG come together to t
 
   - **Who's this run by?**
     We're a group of high schoolers sponsored by [Hack Club](https://hackclub.com), a non-profit global community of high schoolers running clubs!
-  
+
   </FAQ>
   </Callout>
 </Container>
 
 {/* <Gallery>
 
-<Photo wide alt="Overview" src="https://cdn.glitch.com/3d283e0f-19c4-4546-b0b2-223ec3a7dc23%2Foverview.jpg?v=1565769230316" />
-<Photo alt="Working" src="https://cdn.glitch.com/3d283e0f-19c4-4546-b0b2-223ec3a7dc23%2Foverview_2.jpg?v=1565769231539" />
-<Photo alt="Collaborating" src="https://cdn.glitch.com/3d283e0f-19c4-4546-b0b2-223ec3a7dc23%2Fcollaborating.jpg?v=1565769226508" />
-
+<Photo
+  wide
+  alt="Overview"
+  src="https://cdn.glitch.com/3d283e0f-19c4-4546-b0b2-223ec3a7dc23%2Foverview.jpg?v=1565769230316"
+/>
+<Photo
+  alt="Working"
+  src="https://cdn.glitch.com/3d283e0f-19c4-4546-b0b2-223ec3a7dc23%2Foverview_2.jpg?v=1565769231539"
+/>
+<Photo
+  alt="Collaborating"
+  src="https://cdn.glitch.com/3d283e0f-19c4-4546-b0b2-223ec3a7dc23%2Fcollaborating.jpg?v=1565769226508"
+/>
 
 Three workshops taught the basics of making attendees’ first websites, games, & even a web-based synthesizer.
 
-<Photo showAlt alt="Students at the website workshop" src="https://cdn.glitch.com/3d283e0f-19c4-4546-b0b2-223ec3a7dc23%2Fworkshop.jpg?v=1565769230073" />
-<Photo showAlt alt="OfficeBot team" src="https://cdn.glitch.com/3d283e0f-19c4-4546-b0b2-223ec3a7dc23%2Fworking.jpg?v=1565769221347" />
+<Photo
+  showAlt
+  alt="Students at the website workshop"
+  src="https://cdn.glitch.com/3d283e0f-19c4-4546-b0b2-223ec3a7dc23%2Fworkshop.jpg?v=1565769230073"
+/>
+<Photo
+  showAlt
+  alt="OfficeBot team"
+  src="https://cdn.glitch.com/3d283e0f-19c4-4546-b0b2-223ec3a7dc23%2Fworking.jpg?v=1565769221347"
+/>
 
 This team made **OfficeBot**, a rolling robot to play relevant “The Office” quotes anytime.
 
@@ -84,7 +116,10 @@ This team made **OfficeBot**, a rolling robot to play relevant “The Office” 
 - 2am **dance party**? We did it. 💃
 - Hacking while **2ft of snow** fell outside? You bet. 🌨
 
-<Photo alt="Students working" src="https://cdn.glitch.com/3d283e0f-19c4-4546-b0b2-223ec3a7dc23%2Fworking_1.jpg?v=1565769234389" />
+<Photo
+  alt="Students working"
+  src="https://cdn.glitch.com/3d283e0f-19c4-4546-b0b2-223ec3a7dc23%2Fworking_1.jpg?v=1565769234389"
+/>
 
 </Gallery> */}
 
@@ -161,7 +196,7 @@ This team made **OfficeBot**, a rolling robot to play relevant “The Office” 
 
 {/* - ![Nana Abena](https://2019.hackpenn.com/team/zane.jpg)
 
-  **Zane Davis-Barrs** _Software. he/him_
+**Zane Davis-Barrs** _Software. he/him_
 
 - ![Matthew](http://github.com/matthewstanciu.png)
 
@@ -216,10 +251,10 @@ This team made **OfficeBot**, a rolling robot to play relevant “The Office” 
 </Team> */}
 
 {/* <Photo
-  wide
-  alt="Full team photo"
-  src="https://cdn.glitch.com/3d283e0f-19c4-4546-b0b2-223ec3a7dc23%2Fteam_extended.jpg?v=1565769234952"
-  sx={{
+wide
+alt="Full team photo"
+src="https://cdn.glitch.com/3d283e0f-19c4-4546-b0b2-223ec3a7dc23%2Fteam_extended.jpg?v=1565769234952"
+sx={{
     mx: [3, -3, -5, -6],
     maxWidth: '100vw',
     img: {

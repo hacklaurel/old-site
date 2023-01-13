@@ -5,10 +5,10 @@ const makeTitle = (title, name) =>
 
 const Meta = ({
   color = '#3fb34f',
-  name = 'Tiger Hacks',
-  title = 'Tiger Hacks – A brand new hackathon based in Laurel, MD',
-  description = 'Unleash your creativity and problem-solving skills at Tiger Hacks, where PGCPS students come together to design and build innovative solutions to real-world challenges.',
-  image = 'https://2019.hackpenn.com/card.png',
+  name = 'Hack Laurel',
+  title = 'Hack Laurel – A brand new hackathon based in Laurel, MD',
+  description = 'Unleash your creativity and problem-solving skills at Hack Laurel, where PGCPS students come together to design and build innovative solutions to real-world challenges.',
+  image = '/img/hacklaurel_og.png',
   url = 'https://tiger-hacks-site.vercel.app'
 }) => (
   <Head>

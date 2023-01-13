@@ -53,7 +53,7 @@ export default (props) => {
               sx={{ display: ['none', 'block'] }}
               variant="styles.navitem"
             >
-              Tiger Hacks
+              Hack Laurel
             </Text>
           </A>
         </Link>
