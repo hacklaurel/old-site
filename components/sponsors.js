@@ -23,7 +23,7 @@ const Base = styled(Box)`
     max-width: 75%;
     max-height: ${(props) => (props.section === 'sponsors' ? 5 : 3)}rem;
     ${(props) =>
-      props.colorMode === 'dark' && `filter: invert() hue-rotate(180deg);`}
+      props.colormode === 'dark' && `filter: invert() hue-rotate(180deg);`}
   }
 `
 
@@ -42,9 +42,9 @@ const data = {
 const Sponsors = (props) => {
   const [colorMode] = useColorMode()
   return (
-    <Base colorMode={colorMode} {...props}>
+    <Base colormode={colorMode} {...props}>
       {data[props.section || 'sponsors'].map((sponsor) => (
-        <a key={sponsor.name} href={`${sponsor.link}`} >
+        <a key={sponsor.name} href={`${sponsor.link}`}>
           <Image
             sx={{ transform: 'none', transition: 'all 500ms', '&:hover': { transform: 'scale(1.1)' } }}
             alt={sponsor.name}

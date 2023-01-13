@@ -15,7 +15,7 @@ const Caption = styled(Text)`
   max-width: 100%;
   z-index: 0;
   ${(props) =>
-    props.colorMode === 'dark'
+    props.colormode === 'dark'
       ? `
           background-color: rgba(0, 0, 0, 0.875);
           color: ${theme.colors.white};
@@ -62,7 +62,7 @@ const Photo = ({ src, alt, showAlt, wide, ...props }) => {
         loading="lazy"
         sx={{ width: '100%', height: '100%', objectFit: 'cover' }}
       />
-      {showCaption && <Caption colorMode={colorMode} children={alt} />}
+      {showCaption && <Caption colormode={colorMode} children={alt} />}
     </Card>
   )
 }
