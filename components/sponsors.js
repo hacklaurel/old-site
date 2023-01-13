@@ -4,6 +4,7 @@ import styled from '@emotion/styled'
 import { Container } from './blocks'
 import { Box, useColorMode } from 'theme-ui'
 import theme from '../lib/theme'
+import { Button } from 'theme-ui'
 
 const Base = styled(Box)`
   display: grid;
@@ -54,6 +55,18 @@ const Sponsors = (props) => {
           />
         </a>
       ))}
+      <Button
+        as="a"
+        href="https://app.fillout.com/flow/qF3BeM1JnXus"
+        sx={{
+          borderRadius: '15px',
+          fontSize: '24px',
+          ml: 3,
+        }}
+      >
+        {'you? →'}
+      </Button>
+
     </Base>
   )
 }
