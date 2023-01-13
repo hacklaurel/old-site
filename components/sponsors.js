@@ -32,82 +32,12 @@ const Base = styled(Box)`
 const data = {
   sponsors: [
     {
-      name: 'ZEIT',
-      link: 'https://zeit.co',
-      image: 'zeit.svg'
-    },
-    {
-      name: 'Mike’s TV & Appliance',
-      link: 'http://www.mikesvideo.com/',
-      image: 'mikes.png'
-    },
-    {
-      name: 'Invent Penn State',
-      link: 'https://invent.psu.edu',
-      image: 'ips.png'
-    },
-    {
-      name: 'Linode',
-      link: 'https://linode.com',
-      image: 'linode.png'
-    },
-    {
-      name: 'AGI',
-      link: 'http://www.agintegrated.com/',
-      image: 'agi.gif'
-    },
-    {
-      name: '1Password',
-      link: 'https://1password.com',
-      image: '1password.png'
-    },
-    {
-      name: 'Lambda School',
-      link: 'https://lambdaschool.com',
-      image: 'lambda.png'
-    },
-    {
-      name: 'Repl.it',
-      link: 'https://repl.it',
-      image: 'replit.png'
-    },
-    {
-      name: 'Think Company',
-      link: 'https://www.thinkcompany.com//',
-      image: 'thinkco.png'
-    },
-    {
-      name: 'Ben Franklin Technology Partners',
-      link: 'https://benfranklin.org/',
-      image: 'ben-franklin.jpg'
-    },
-    {
       name: 'Hack Club Bank',
       link: 'https://hackclub.com/bank',
       image: 'hackclub-bank.svg'
     }
   ],
   additionalSupport: [
-    {
-      name: 'Sketch',
-      link: 'https://sketchapp.com/',
-      image: 'sketch.svg'
-    },
-    {
-      name: 'Notion',
-      link: 'https://www.notion.so/product',
-      image: 'notion.svg'
-    },
-    {
-      name: '.tech Domains',
-      link: 'https://get.tech/',
-      image: 'dottech.png'
-    },
-    {
-      name: 'ExpressVPN',
-      link: 'https://www.expressvpn.com/',
-      image: 'expressvpn.png'
-    }
   ]
 }
 
@@ -119,7 +49,7 @@ const Sponsors = (props) => {
         <a key={sponsor.name} href={`${sponsor.link}`}>
           <img
             alt={sponsor.name}
-            src={`//2019.hackpenn.com/sponsors/${sponsor.image}`}
+            src={`/img/${sponsor.image}`}
             key={sponsor.image}
           />
         </a>
