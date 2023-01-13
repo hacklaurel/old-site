@@ -48,13 +48,6 @@ export default (props) => {
         <Link href="/" passHref>
           <A sx={{ display: 'flex', alignItems: 'center' }}>
             <Avatar light size={48} mr={3} />
-            <Text
-              as="span"
-              sx={{ display: ['none', 'block'] }}
-              variant="styles.navitem"
-            >
-              Hack Laurel
-            </Text>
           </A>
         </Link>
         <Box sx={{ mx: 'auto' }} />
@@ -97,7 +90,7 @@ export default (props) => {
           }}
         >
           <Flex sx={{ justifyContent: 'center' }}>
-            <A
+            {/* <A
               href="https://twitter.com/hackpenn"
               title="Twitter"
               sx={{ mx: 2 }}
@@ -110,17 +103,17 @@ export default (props) => {
               sx={{ mx: 2 }}
             >
               <Icon glyph="facebook" size={36} />
-            </A>
-            <A href="https://github.com/hackpenn" title="GitHub" sx={{ mx: 2 }}>
+            </A> */}
+            <A href="https://github.com/hacklaurel" title="GitHub" sx={{ mx: 2 }}>
               <Icon glyph="github" size={36} />
             </A>
-            <A
+            {/* <A
               href="https://instagram.com/hackpenn"
               title="Instagram"
               sx={{ mx: 2 }}
             >
               <Icon glyph="instagram" size={36} />
-            </A>
+            </A> */}
             <A href="mailto:contact@hackpenn.com" title="Email" sx={{ mx: 2 }}>
               <Icon glyph="email" size={36} />
             </A>
