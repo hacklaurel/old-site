@@ -4,7 +4,7 @@ const makeTitle = (title, name) =>
   title.startsWith(name) ? title : `${title} – ${name}`
 
 const Meta = ({
-  color = '#3fb34f',
+  color = '#e52660',
   name = 'Hack Laurel',
   title = 'Hack Laurel – A brand new hackathon based in Laurel, MD',
   description = 'Unleash your creativity and problem-solving skills at Hack Laurel, where PGCPS students come together to design and build innovative solutions to real-world challenges.',
