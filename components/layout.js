@@ -50,11 +50,11 @@ export default (props) => {
           </A>
         </Link>
         <Box sx={{ mx: 'auto' }} />
-        <Link href="/finances" passHref>
+        {/* <Link href="/finances" passHref>
           <A variant="styles.navitem" sx={{ ml: 'auto', mr: [3, 4] }}>
             Finances
           </A>
-        </Link>
+        </Link> */}
         <ColorButton
           onClick={(e) => {
             const next = mode === 'dark' ? 'light' : 'dark'
