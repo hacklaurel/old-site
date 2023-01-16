@@ -8,8 +8,8 @@ export default ({ size = 32, light = false, ...props }) => (
       borderRadius: 0
     }}
     {...props}
-    src={`/android-chrome-192x192.png`}
-    alt="Hack Penn avatar"
+    src={`/img/hl_icon.webp`}
+    alt="hack laurel avatar"
     width={size}
     height={size}
   />

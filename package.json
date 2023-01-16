@@ -5,7 +5,7 @@
   "author": "Lachlan Campbell <lachlan@hackpenn.com>",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start"
   },
   "dependencies": {
@@ -22,6 +22,7 @@
     "react": "^18.0.1",
     "react-calendar-heatmap": "^1.9.0",
     "react-dom": "^18.2.0",
+    "sharp": "^0.31.3",
     "theme-ui": "^0.15.4",
     "unformat-usd": "^0.1.1"
   },
