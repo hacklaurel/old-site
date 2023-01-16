@@ -8,13 +8,20 @@ import {
   Grid,
   FAQ
 } from '../components/blocks'
+import Image from 'next/image'
 import { Button } from 'theme-ui'
 import Sponsors from '../components/sponsors'
 import Photo from '../components/photo'
+import ousmanPhoto from '../public/img/ousman.webp'
+import valentinPhoto from '../public/img/valentin.webp'
+import nanaabenaPhoto from '../public/img/nana_abena.webp'
+import christianPhoto from '../public/img/christian.webp'
+import terryPhoto from '../public/img/terry.webp'
+import hackLaurelWm from '../public/img/hacklaurel_wm.webp'
 
 <Banner sx={{pt: 0}}>
 <h1 style={{display: 'none'}}>Hack Laurel</h1>
-<img src="/img/hacklaurel_wm.webp" alt="hack laurel wordmark" style={{width: "20em"}}/>
+<Image src={hackLaurelWm} alt="hack laurel wordmark" style={{width: "40em", height: "auto"}} priority />
 
 ## Unleash your creativity and problem-solving skills at Hack Laurel, where PGCPS students come together to design and build innovative solutions to real-world challenges.
 
@@ -195,23 +202,23 @@ This team made **OfficeBot**, a rolling robot to play relevant “The Office” 
 
 <Team sx={{ mb: [4, 5] }}>
 
-- ![Terry](https://thrzl.xyz/profile.webp)
+- <Image src={terryPhoto} alt="Terry"/>
 
   **Terry** _Co-director, lead. he/him_
 
-- ![Ousman](/img/ousman.webp)
+- <Image src={ousmanPhoto} alt="Ousman"/>
 
   **Ousman** _Co-director, logistics. he/him_
 
-- ![Nana Abena](/img/nana_abena.webp)
+- <Image src={nanaabenaPhoto} alt="Nana Abena"/>
 
   **Nana Abena** _Organizer, finances. she/they_
 
-- ![Christian](/img/christian.webp)
+- <Image src={christianPhoto} alt="Christian"/>
 
   **Christian** _Organizer, marketing. he/him_
 
-- ![Valentin](/img/valentin.webp)
+- <Image src={valentinPhoto} alt="Valentin"/>
 
   **Valentin** _Organizer, planning. he/him_
 
