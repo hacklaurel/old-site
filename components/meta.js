@@ -9,13 +9,13 @@ const Meta = ({
   title = 'Hack Laurel – A brand new hackathon based in Laurel, MD',
   description = 'Unleash your creativity and problem-solving skills at Hack Laurel, where PGCPS students come together to design and build innovative solutions to real-world challenges.',
   image = '/img/hacklaurel_og.png',
-  url = 'https://tiger-hacks-site.vercel.app'
+  url = 'https://hacklaurel.netlify.app'
 }) => (
   <Head>
     <meta key="og_locale" property="og:locale" content="en_US" />
     <meta key="og_type" property="og:type" content="website" />
     <meta key="og_site" property="og:site_name" content={name} />
-    <meta key="tw_site" name="twitter:site" content="@hackpenn" />
+    {/* <meta key="tw_site" name="twitter:site" content="@hacklaurel" /> */}
     <title key="title">{makeTitle(title, name)}</title>
     <meta key="og_title" property="og:title" content={makeTitle(title, name)} />
     <meta
@@ -65,7 +65,7 @@ const Meta = ({
         __html: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Organization',
-          name: 'hackpenn',
+          name: 'hacklaurel',
           url: 'https://tiger-hacks-site.vercel.app',
           logo: 'https://tiger-hacks-site.vercel.app/img/tigerhacks.wp2',
           sameAs: [
