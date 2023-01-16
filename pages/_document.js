@@ -13,7 +13,7 @@ export default class extends Document {
         <Head>
           <style>{`:root { supported-color-schemes: light dark; }`}</style>
           <meta name="format-detection" content="telephone=no" />
-          <script async src="https://hacklaurel-analytics.up.railway.app/tracker.js" data-ackee-server="https://hacklaurel-analytics.up.railway.app" data-ackee-domain-id="7caaf1ec-81b8-451c-af13-17f999f3a1f4"></script>
+          <script async defer data-website-id="cf608ab0-bfce-472f-97db-d77b96ef8750" src="https://magic.thrzl.xyz/umami.js"></script>
         </Head>
         <body>
           <InitializeColorMode />
